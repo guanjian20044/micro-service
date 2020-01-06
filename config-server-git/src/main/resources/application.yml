@@ -12,7 +12,7 @@ spring:
 server:
   port: 12000
 
-  eureka:
-    client:
-      service-url:
-        defaultZone: http://localhost:7000/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7000/eureka/
