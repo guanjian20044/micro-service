@@ -11,3 +11,8 @@ spring:
 #          spring.cloud.config.server.git.password：访问 Git 仓库的用户密码
 server:
   port: 12000
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:7000/eureka/
