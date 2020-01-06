@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: config-server
@@ -6,7 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zhaoyibo/spring-cloud-study # ÅäÖÃgit²Ö¿âµÄµØÖ·
-          search-paths: config-repo # git²Ö¿âµØÖ·ÏÂµÄÏà¶ÔµØÖ·£¬¿ÉÒÔÅäÖÃ¶à¸ö£¬ÓÃ,·Ö¸î¡£
+          uri: https://github.com/guanjian20044/micro-service # é…ç½®gitä»“åº“çš„åœ°å€
+          search-paths: config-repo # gitä»“åº“åœ°å€ä¸‹çš„ç›¸å¯¹åœ°å€ï¼Œå¯ä»¥é…ç½®å¤šä¸ªï¼Œç”¨,åˆ†å‰²ã€‚
+#          spring.cloud.config.server.git.usernameï¼šè®¿é—® Git ä»“åº“çš„ç”¨æˆ·å
+#          spring.cloud.config.server.git.passwordï¼šè®¿é—® Git ä»“åº“çš„ç”¨æˆ·å¯†ç 
 server:
   port: 12000

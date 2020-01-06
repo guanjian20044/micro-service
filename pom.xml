@@ -24,6 +24,8 @@
         <module>hystrix-dashboard-1</module>
         <module>turbine</module>
         <module>turbine-stream-rabbitmq</module>
+        <module>config-server-git</module>
+        <module>config-client</module>
     </modules>
 
     <properties>
