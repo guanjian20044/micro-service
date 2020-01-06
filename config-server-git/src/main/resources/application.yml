@@ -7,12 +7,21 @@ spring:
         git:
           uri: https://github.com/guanjian20044/micro-service # 配置git仓库的地址
           search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
-#          spring.cloud.config.server.git.username：访问 Git 仓库的用户名
-#          spring.cloud.config.server.git.password：访问 Git 仓库的用户密码
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+
 server:
   port: 12000
 
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:7000/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
